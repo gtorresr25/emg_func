@@ -14,12 +14,12 @@ for (let index = 0; index <= window_size; index++) {
     // list.push(0)
     list.push(EMG_code)
 }
-namespace custom2 {
+namespace custom {
     /**
      * Use dynamic average window to filter EMG signal from Pin P3
      */
     //% block="EMG_filtered in the windows size %window_size by pin %pin_name"
-    export function EmgFilter(pin_name: AnalogPin): number {
+    export function EmgFilter(window_size: number, pin_name: AnalogPin): number {
         // Add code here
         EMG_code = pins.analogReadPin(pin_name)
         list.unshift(EMG_code)
