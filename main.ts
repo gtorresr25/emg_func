@@ -3,10 +3,10 @@
  * 
  * Read more at https://makecode.microbit.org/blocks/custom
  */
-let EMG_code = 0
-let list: number[] = []
-let sum = 0
 let ave = 0
+let sum = 0
+let list: number[] = []
+let EMG_code = 0
 let window_size = 15
 // Change the EMG name to EMG_code so student's variable will not have conflict
 for (let index = 0; index <= window_size; index++) {
@@ -14,7 +14,7 @@ for (let index = 0; index <= window_size; index++) {
     // list.push(0)
     list.push(EMG_code)
 }
-namespace custom {
+namespace custom2 {
     /**
      * Use dynamic average window to filter EMG signal from Pin P3
      */
