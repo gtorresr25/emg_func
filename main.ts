@@ -3,10 +3,10 @@
  * 
  * Read more at https://makecode.microbit.org/blocks/custom
  */
-let ave = 0
-let sum = 0
-let list: number[] = []
 let EMG_code = 0
+let list: number[] = []
+let sum = 0
+let ave = 0
 let winsize = 15
 for (let index = 0; index <= winsize; index++) {
     EMG_code = pins.analogReadPin(AnalogPin.P3)
